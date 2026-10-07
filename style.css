@@ -36,3 +36,15 @@
 /* Ritual navigation */
 .routine-link{display:flex;align-items:center;gap:8px}.ritual-label{display:flex;flex-direction:column;align-items:flex-start;line-height:1.2}.ritual-label small{display:block;font-size:12px;font-weight:400;letter-spacing:.02em;opacity:.7;margin-top:3px}.routine-link[aria-current="location"]{color:var(--lavender)}
 @media(max-width:760px){.mobile-dock>a{min-height:57px;transition:background .2s,color .2s}.mobile-dock>a>.ritual-label{font-size:12px}.mobile-dock .ritual-label small{font-size:12px}.mobile-dock>a.active>#mobile-routine-count{background:#100f1117}.routine-link .ritual-label small{font-size:12px}}
+
+/* Mobile film: preserve the woman and bottle in a wider frame. */
+@media(max-width:760px){
+ .film-hero{height:auto;min-height:100svh;max-height:none;padding-top:103px;padding-bottom:120px}
+ .hero-media{background:#100f11}
+ .hero-media video{position:absolute;top:76px;left:0;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:40% center;transform:none!important;will-change:auto}
+ .film-shade{background:linear-gradient(180deg,#100f1166 0,transparent 110px,transparent calc(76px + 55vw),#100f11 calc(76px + 75vw))}
+ .hero-title{margin:calc(75vw - 22px) 0 30px;transform:none!important}
+ .hero-topline{position:absolute;top:96px;left:5%;right:5%}
+}
+
+.logo{width:166px}.logo img{display:block;width:100%;height:auto;filter:brightness(0) invert(1)}.logo span{letter-spacing:.43em}@media(max-width:760px){.logo{width:122px}.logo span{font-size:8px;letter-spacing:.36em}}@media(max-width:360px){.logo{width:108px}}
